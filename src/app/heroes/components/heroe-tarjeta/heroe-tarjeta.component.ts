@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
 
-import { IHeroes } from '../../interfaces/heroes.interface';
+import { iHeroes } from '../../interfaces/heroes.interface';
 
 @Component({
   selector: 'app-heroe-tarjeta',
@@ -9,7 +9,7 @@ import { IHeroes } from '../../interfaces/heroes.interface';
 })
 export class HeroeTarjetaComponent implements OnInit {
 // recibo los datos del componente padre por medio del input
-@Input() heroe! :IHeroes ; // la interface no puede quedar indefinida, por ende se coloca el ! para dejar los datos opcionales
+@Input() heroe! :iHeroes ; // la interface no puede quedar indefinida, por ende se coloca el ! para dejar los datos opcionales
   constructor() { }
   
   ngOnInit(): void {

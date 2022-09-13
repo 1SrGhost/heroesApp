@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { IHeroes } from '../interfaces/heroes.interface';
+import { iHeroes } from '../interfaces/heroes.interface';
 
 @Pipe({
   name: 'imagenesPipe',
@@ -10,7 +10,7 @@ valor de entrada y una matriz opcional de parámetros y devuelve el valor transf
 export class ImagenesPipe implements PipeTransform {
   /* Un método que forma parte de la interfaz PipeTransform. Es un método que se llama cuando se
   utiliza la tubería. */
-  transform(imagen: IHeroes): string {
+  transform(imagen: iHeroes): string {
     /* Si la identificación de la imagen no está definida, devuelva no-image.png */
     if (!imagen.id) {
       return './assets/no-image.png';

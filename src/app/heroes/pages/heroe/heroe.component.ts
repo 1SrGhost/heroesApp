@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { switchMap } from 'rxjs';
-import { IHeroes } from '../../interfaces/heroes.interface';
+import { iHeroes } from '../../interfaces/heroes.interface';
 import { HeroesService } from '../../services/heroes.service';
 
 @Component({
@@ -29,7 +29,7 @@ export class HeroeComponent implements OnInit {
  /* Una característica de TypeScript llamada Operador de aserción no nulo. */
  /* El código anterior usa el operador switchMap para obtener la identificación de la ruta activada y
  luego usa esa identificación para obtener el héroe de heroesService. */
-  heroe!: IHeroes;
+  heroe!: iHeroes;
   ngOnInit(): void {
     this.activatedRoute.params
       .pipe(switchMap(({ id }) => this.heroesService.getHeroesId(id)))

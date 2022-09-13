@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
 import { HeroesService } from '../../services/heroes.service';
-import { IHeroes } from '../../interfaces/heroes.interface';
+import { iHeroes } from '../../interfaces/heroes.interface';
 
 @Component({
   selector: 'app-listado',
@@ -11,7 +11,7 @@ import { IHeroes } from '../../interfaces/heroes.interface';
 export class ListadoComponent implements OnInit {
 //envio los datos al componente hijo por medio del output
   /* Una propiedad que se utiliza para enviar datos al componente secundario. */
-  @Output() heroes:IHeroes[]= [];
+  @Output() heroes:iHeroes[]= [];
  /**
   * La función constructora es un método predeterminado de la clase que se ejecuta cuando se crea una
   * instancia de la clase y garantiza la inicialización adecuada de los campos en la clase y sus

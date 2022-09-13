@@ -1,5 +1,5 @@
-/* Creando una interfaz llamada IHeroes. */
-export interface IHeroes {
+/* Creando una interfaz llamada iHeroes. */
+export interface iHeroes {
     id?:               string;
     superhero:        string;
     publisher:        Publisher;

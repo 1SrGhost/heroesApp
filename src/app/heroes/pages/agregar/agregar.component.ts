@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { IHeroes, Publisher } from '../../interfaces/heroes.interface';
+import { iHeroes, Publisher } from '../../interfaces/heroes.interface';
 import { HeroesService } from '../../services/heroes.service';
 import { switchMap } from 'rxjs';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -25,8 +25,8 @@ export class AgregarComponent implements OnInit {
     },
   ];
 
-  /* Creando un nuevo objeto de tipo IHeroes y asignándolo a la variable heroe. */
-  heroe: IHeroes = {
+  /* Creando un nuevo objeto de tipo iHeroes y asignándolo a la variable heroe. */
+  heroe: iHeroes = {
     superhero: '',
     publisher: Publisher.DCComics,
     alter_ego: '',

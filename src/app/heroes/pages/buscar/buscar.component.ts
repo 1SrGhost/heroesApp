@@ -1,7 +1,7 @@
 /* Importación de los módulos necesarios para el componente. */
 import { Component, OnInit } from '@angular/core';
 import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
-import { IHeroes } from '../../interfaces/heroes.interface';
+import { iHeroes } from '../../interfaces/heroes.interface';
 import { HeroesService } from '../../services/heroes.service';
 
 @Component({
@@ -12,8 +12,8 @@ import { HeroesService } from '../../services/heroes.service';
 export class BuscarComponent implements OnInit {
   /* Declarar las variables que se utilizarán en el componente. */
   termino: string = '';
-  heroes: IHeroes[] = [];
-  heroeSeleccionado: IHeroes | undefined;
+  heroes: iHeroes[] = [];
+  heroeSeleccionado: iHeroes | undefined;
 
   /**
    * La función constructora es un método predeterminado de la clase que se ejecuta cuando se crea una
@@ -50,7 +50,7 @@ export class BuscarComponent implements OnInit {
       this.heroeSeleccionado = undefined;
       return;
     }
-    const heroe: IHeroes = event.option.value;
+    const heroe: iHeroes = event.option.value;
     this.termino = heroe.superhero;
 
     this.heroesService
