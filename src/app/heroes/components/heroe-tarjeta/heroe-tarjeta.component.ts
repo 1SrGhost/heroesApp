@@ -13,6 +13,7 @@ export class HeroeTarjetaComponent implements OnInit {
   constructor() { }
   
   ngOnInit(): void {
+    
   }
 
 }

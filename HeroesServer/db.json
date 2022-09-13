@@ -166,6 +166,42 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
+    },
+    {
+      "superhero": "Andres Perez pppp",
+      "publisher": "DC Comics",
+      "alter_ego": "",
+      "first_appearance": "",
+      "characters": "",
+      "alt_img": "no-image.png",
+      "id": "Z_1K7Q8"
+    },
+    {
+      "superhero": "algo esta pasando",
+      "publisher": "Marvel Comics",
+      "alter_ego": "",
+      "first_appearance": "",
+      "characters": "",
+      "alt_img": "https://www.quien.net/doc2/Flash-dc-comics.jpg",
+      "id": "HrcM8Uv"
+    },
+    {
+      "superhero": "Senor X",
+      "publisher": "DC Comics",
+      "alter_ego": "",
+      "first_appearance": "",
+      "characters": "",
+      "alt_img": "https://i1.sndcdn.com/avatars-nWyUazpEQrlKCFCR-qAc9Pg-t500x500.jpg",
+      "id": "OMlyGz4"
+    },
+    {
+      "superhero": "Algo Paso",
+      "publisher": "DC Comics",
+      "alter_ego": "",
+      "first_appearance": "",
+      "characters": "",
+      "alt_img": "no-image.png",
+      "id": "yiK26jX"
     }
   ]
 }

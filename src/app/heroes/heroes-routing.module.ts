@@ -7,6 +7,7 @@ import { BuscarComponent } from './pages/buscar/buscar.component';
 import { HeroeComponent } from './pages/heroe/heroe.component';
 import { HomeComponent } from './pages/home/home.component';
 
+/* Definición de rutas para la aplicación. */
 const routes: Routes = [ {
   path: '',
   component: HomeComponent,
@@ -43,6 +44,7 @@ const routes: Routes = [ {
 @NgModule({
   declarations: [],
   imports: [
+   /* Importando las rutas para el módulo hijo. */
     RouterModule.forChild(routes),
     CommonModule
   ],

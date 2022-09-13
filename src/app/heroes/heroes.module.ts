@@ -11,10 +11,7 @@ import { MaterialModule } from '../material/material.module';
 import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
 import { ImagenesPipe } from './pipes/imagenes.pipe';
 import { FormsModule } from '@angular/forms';
-
-
-
-
+import { ConfirmarComponent } from './components/confirmar/confirmar.component';
 
 @NgModule({
   declarations: [
@@ -24,14 +21,15 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     ListadoComponent,
     HeroeTarjetaComponent,
-    ImagenesPipe
+    ImagenesPipe,
+    ConfirmarComponent,
   ],
   imports: [
     CommonModule,
     HeroesRoutingModule,
     FlexLayoutModule,
     FormsModule,
-    MaterialModule
-  ]
+    MaterialModule,
+  ],
 })
-export class HeroesModule { }
+export class HeroesModule {}

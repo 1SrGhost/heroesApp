@@ -1,3 +1,4 @@
+/* Creando una interfaz llamada IHeroes. */
 export interface IHeroes {
     id?:               string;
     superhero:        string;
@@ -8,6 +9,7 @@ export interface IHeroes {
     alt_img?:          string;
 }
 
+/* Creando un tipo llamado Publisher que solo puede ser uno de dos valores: DCComics o MarvelComics. */
 export enum Publisher {
     DCComics = "DC Comics",
     MarvelComics = "Marvel Comics",
